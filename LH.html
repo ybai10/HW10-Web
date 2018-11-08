@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="Images/Cloud.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Latitude Humidity</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="landing.html">Latitude</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu active">
+                            <li class="dropdown-header">Visualizations</li>
+                            <li><a href="LT.html"><span class="glyphicon-cloud">&nbsp;&nbsp;Max Temperature</span></a></li>
+                            <li><a href="LC.html"><span class="glyphicon-cloud">&nbsp;&nbsp; Cloudiness</span></a></li>
+                            <li><a href="LH.html"><span class="glyphicon-cloud">&nbsp;&nbsp;Humidity</span></a></li>
+                            <li><a href="LW.html"><span class="glyphicon-cloud">&nbsp;&nbsp;Wind Speed</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comparison.html">Comparison</a></li>
+                    <li><a href="Data.html">Data</a></li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8" style="margin-bottom: 25px;">
+            <div class="plaincontainer">
+                <h1>Latitude vs. Humidity</h1>
+                <img src="Images/LH.png" alt="City Latitude vs. Humidity" style="padding-bottom: 30px;">
+                <p>
+                    Based on the scatter plot presenting the relationship between latitude and humidity by sampling 500 random cities, 
+                    there is no obvious trend found between latitude and humidity. At each given latitude, the distribution of hummidity 
+                    is very wide. 
+
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="plaincontainer" style="margin-bottom: -20px;">
+                <h1>Visualiations</h1></div>
+                <div class="box col-sm-3 col-md-6 col-xs-12 paddinghack">
+                    <a href="LT.html"><img src="Images/LT.png" alt="Latitude vs. Temperature" title="Latitude vs. Temperature"></a>
+                </div>
+                <div class="box col-sm-3 col-md-6 col-xs-12 paddinghack">
+                    <a href="LH.html"><img src="Images/LH.png" alt="Latitude vs. Humidity" title="Latitude vs. Humidity"></a>
+                </div>
+                <div class="box col-sm-3 col-md-6 col-xs-12 paddinghack selectedimage">
+                    <a href="LW.html"><img src="Images/LW.png" alt="Latitude vs. Wind Speed" title="Latitude vs. Wind Speed"></a>
+                </div>
+                <div class="box col-sm-3 col-md-6 col-xs-12 paddinghack">
+                    <a href="LC.html"><img src="Images/LC.png" alt="Latitude vs. Cloudiness" title="Latitude vs. Cloudiness"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
